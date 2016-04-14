@@ -113,7 +113,7 @@
  $(document).ready(function(){
  	$('[data-toggle="tooltip"]').tooltip();
  	$("#myPage").click(function(){
- 		$("html").animate({scrollTop:0},1000);
+ 		$("html,body").animate({scrollTop:0},1000);
  	})
   	if($(window).width()>991){
   		$("#video").css("padding-top",($("#video-box").height()-$("#video1").height())/2+"px")
