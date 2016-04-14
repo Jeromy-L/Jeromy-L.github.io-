@@ -88,16 +88,16 @@
 
 .navbar-a{
   color: white;
-  background-color:#FF561C;
+  background-color:#A65BCB;
 
 }
 
 .nav >li > a:hover{
-  background-color: #FF561C;
+  background-color:#A65BCB;
   
 }
 .nav >li >a:focus{
-  background-color:  #FF9966;
+  background-color: #A65BCB;
 }
 
 .nav-tool{
@@ -106,7 +106,7 @@
 }
 .nav-tool:hover{
   color:#737373;
-  background-color: #FF561C;
+  background-color: #A65BCB;
 }
 
 #myCarousel{
