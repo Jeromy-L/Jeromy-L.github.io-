@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.5, user-scalable=no">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/bootstrap.offcanvas.css"/>
   <link rel="stylesheet" type="text/css" href="css/activity.css">
 
 </head>
@@ -13,12 +14,12 @@
   <nav class="navbar-a navbar-fixed-top" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);" >
     <div class="container-fluid">
       <div class="navbar-header" >
-        <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <button class="navbar-toggle  offcanvas-toggle" data-toggle="offcanvas" data-target="#myNavbar">
           <span class="glyphicon glyphicon-list" style="font-size: 20px"></span> 
         </button>
         <a href="index.html" ><p class="navbar-brand nav-tool" style="font-size:21px;height: 40px;">热爆文化</p></a>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="navbar-offcanvas navbar-offcanvas-right  navbar-offcanvas-fade navbar-offcanvas-touch navbar-a" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li ><a href="project.html"class="nav-tool">项目</a></li>
         <li style="background-color: #FF9966"><a href="activity.html"class="nav-tool">活动</a></li>
@@ -78,7 +79,7 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  
+  <script src="js/bootstrap.offcanvas.js"></script>
   <script type="text/javascript">
       $(document).ready(function(){
         if($(window).width()<760){

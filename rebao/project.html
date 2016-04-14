@@ -6,19 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.5, user-scalable=no">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/bootstrap.offcanvas.css"/>
   <link rel="stylesheet" type="text/css" href="css/project.css">
 
 </head>
-<body id="body">
-  <nav class="navbar-a navbar-fixed-top" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);" >
+<body id="body" class="background">
+    <nav class="navbar-a navbar-fixed-top" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);" >
     <div class="container-fluid">
       <div class="navbar-header" >
-        <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <button class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#myNavbar">
           <span class="glyphicon glyphicon-list" style="font-size: 20px"></span> 
         </button>
         <a href="index.html" ><p class="navbar-brand nav-tool" style="font-size:21px;height: 40px;">热爆文化</p></a>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="navbar-offcanvas navbar-offcanvas-right  navbar-offcanvas-fade navbar-offcanvas-touch navbar-a" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li  style="background-color: #FF9966"><a href="project.html"class="nav-tool">项目</a></li>
         <li><a href="activity.html"class="nav-tool">活动</a></li>
@@ -44,11 +45,11 @@
       </div>
     </div>
     <div class="tab-content col-xs-12 col-sm-10 col-md-10">
-      <div id="one" class="tab-pane fade in active">
-        <div id="img-box" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <img src="img/14.jpg" class="img img-responsive">
+      <div id="one" class="tab-pane fade in active" style="padding-top: 80px"> 
+        <div  class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="padding-bottom: 50px;">
+          <img src="img/14.jpg" style="width:100%">
         </div>
-        <div class="inner-text col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class=" col-sm-12 col-md-5 col-lg-5 text1">
           <h3>音乐会</h3>
           <p>　“白子画，我以神的名义诅咒你，今生今世，永生永世，不老不死，不伤不灭！”
             一步一微笑，一步一伤心，一步一劫灰
@@ -57,11 +58,11 @@
         </p>
         </div>
       </div>
-      <div id="two" class="tab-pane fade">
-        <div id="img-box" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <img src="img/15.jpeg" class="img img-responsive">
+      <div id="two" class="tab-pane fade in" style="padding-top: 80px"> 
+        <div  class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="padding-bottom: 50px;">
+          <img src="img/15.jpeg" style="width:100%">
         </div>
-        <div class="inner-text col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class=" col-sm-12 col-md-5 col-lg-5 text1">
           <h3>演唱会</h3>
           <p>昆仑派一直都是江湖上首屈一指的名门正派，统领武林多年，在江湖上也有非常高的威望。昆仑掌门李景天 为保天下不陷入混乱，对抗企图抢夺血晶石的绿袍老祖，把血晶石打入天赋异禀的丁隐体内，丁隐也因为这个原因从此拜入蜀山门下修炼剑法，誓要练成昆仑绝学，替天下人向绿袍老祖寻仇。
           偶然间，丁隐发现绿袍老祖之女玉罗刹竟然与他逝去的爱妻长得惊人的相似，于是二人便坠入情网。此时，昆仑剑派内部也是暗流涌动，一场武林浩劫即将来临，丁隐联合同门丹辰子、周青云、李紫英以及结拜兄弟小张，历经艰险，但是没有想到却陷入更大的阴谋，令众人分崩离析。
@@ -121,9 +122,10 @@
   
   
   <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.offcanvas.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/TweenMax.min.js"></script>
+  
   <script type="text/javascript">
       $(document).ready(function(){
         if($(window).width()<760){

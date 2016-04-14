@@ -101,3 +101,10 @@
 #sidebar ul li {
 	border-top: 1px solid #e1e1e1;
 }
+.navbar-nav{
+  text-align: center;
+  
+}
+.offcanvas-toggle{
+  background: none;
+}

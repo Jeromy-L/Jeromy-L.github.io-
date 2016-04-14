@@ -89,7 +89,7 @@
 .navbar-a{
   color: white;
   background-color:#FF561C;
-  font-color:white;
+
 }
 
 .nav >li > a:hover{
@@ -140,4 +140,11 @@
       margin-bottom: 30px;
       margin-top: 60px;
     
+}
+.navbar-nav{
+  
+  margin-left: 40px;
+}
+.offcanvas-toggle{
+  background: none;
 }
