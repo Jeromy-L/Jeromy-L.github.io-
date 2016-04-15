@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'MyNewFont';   /*字体名称*/
+  src: url('fonts/glyphicons-halflings-regular.svg');       /*字体源文件*/
+}
 .background{
   
   background-color: #EEEEEE;
@@ -11,7 +15,7 @@
 }
 #footer {
     clear: both;
-    padding-top: 20px;
+    padding-top: 40px;
     border-top: 1px solid #e5e5e5;
     display: block;
     height: 100px; 
@@ -27,7 +31,7 @@
 #footer >p > span{
   cursor: pointer;
   left: 20%;
-  top: 20px;
+  
 
 }
 #footer + .tooltip >.tooltip-inner{
@@ -115,6 +119,7 @@
       padding-bottom: 30px;
 }
 #video-box{
+  font-family: "黑体";
   margin-top: 40px;
   margin-bottom: 50px;
   height: auto;
@@ -147,4 +152,24 @@
 }
 .offcanvas-toggle{
   background: none;
+}
+@media only screen and (max-width: 990px){
+  .img-box .img p,#video-box .inner-text p{
+  word-wrap: break-word;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+  #video-box .inner-text h1{
+    word-wrap: break-word;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+}
+@media only screen and (max-width: 500px){
+  .img-box .img p,#video-box .inner-text p{
+  word-wrap: break-word;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
 }
