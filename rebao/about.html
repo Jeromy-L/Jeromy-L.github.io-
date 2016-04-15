@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>热爆文化</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.5, user-scalable=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/bootstrap.offcanvas.css"/>
+  <link rel="stylesheet" type="text/css" href="css/about.css">
+
+</head>
+<body id="body">
+    <nav class="navbar-a navbar-fixed-top" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);" >
+      <div class="container-fluid">
+        <div class="navbar-header" >
+          <button class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#myNavbar">
+            <span class="glyphicon glyphicon-list" style="font-size: 20px"></span> 
+          </button>
+          <a href="index.html" ><p class="navbar-brand nav-tool" style="font-size:21px;height: 40px;">热爆文化</p></a>
+        </div>
+        <div class="navbar-offcanvas navbar-offcanvas-right  navbar-offcanvas-fade navbar-offcanvas-touch navbar-a" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="project.html"class="nav-tool">项目</a></li>
+            <li><a href="activity.html"class="nav-tool">活动</a></li>
+            <li style="background-color: #A63BCB"><a href="about.html"class="nav-tool">关于</a></li>
+          </ul>
+        </div>
+      </div>
+  </nav> 
+  <div style="width: 100%">
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding-top: 150px;">
+      <div>
+        <img src="img/logo.jpg" style="width: 100%">
+        <p style="text-align: center;font-size: 20px">歌手不死，永生舞台，音乐无界，永存脑海。<br>热爆文化倾力为您打造超凡视听体验。</p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.offcanvas.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  
+  <script type="text/javascript">
+      $(document).ready(function(){
+        if($(window).width()<760){
+          $("#sidebar").css("height","260px")
+        }
+        else{
+          $("#sidebar").css("height","500px")
+        }
+        
+        $("#logo").css("padding-left",($(".box ul").width()-80)/2+"px")
+        $(window).resize(function(){
+          $("#logo").css("padding-left",($(".box ul").width()-80)/2+"px")
+          if($(window).width()<760){
+            $("#sidebar").css("height","260px")
+          }
+          else{
+            $("#sidebar").css("height","500px")
+          }
+        })
+        $(".nav-tool").bind("mouseover",function(){
+          $(this).css("color","white")
+          $(this).css("opacity","0.5")
+        }).bind("mouseout",function(){
+            $(this).css("opacity",1)
+        })
+       
+      })
+        
+  </script>
+ 
+</body>   
+</html>
